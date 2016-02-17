@@ -14,6 +14,7 @@ class UserProfile(models.Model):
 
     user = models.OneToOneField(User)
     latest_editing = models.DateTimeField(auto_now=True)
+    test_name = models.CharField(max_length=30, default='')
 
     class Meta:
         verbose_name = 'Profile'
